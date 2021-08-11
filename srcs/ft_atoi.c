@@ -6,7 +6,7 @@
 /*   By: paugusto <paugusto@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/30 17:02:47 by paugusto          #+#    #+#             */
-/*   Updated: 2021/08/07 13:30:12 by paugusto         ###   ########.fr       */
+/*   Updated: 2021/08/10 12:21:12 by paugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ static int	is_negative(const char *str)
 	return (sign);
 }
 
-int			ft_atoi(const char *str)
+int	ft_atoi(const char *str)
 {
 	int		value;
 	int		i;

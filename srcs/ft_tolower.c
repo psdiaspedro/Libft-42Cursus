@@ -6,7 +6,7 @@
 /*   By: paugusto <paugusto@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/30 13:53:37 by paugusto          #+#    #+#             */
-/*   Updated: 2021/08/07 12:23:50 by paugusto         ###   ########.fr       */
+/*   Updated: 2021/08/10 12:23:33 by paugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_tolower(int c)
 {
-	unsigned char x;
+	unsigned char	x;
 
 	x = (unsigned char)c;
 	if (c >= 65 && c <= 90)

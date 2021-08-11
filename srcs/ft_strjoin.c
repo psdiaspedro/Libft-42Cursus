@@ -6,7 +6,7 @@
 /*   By: paugusto <paugusto@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/02 14:07:08 by paugusto          #+#    #+#             */
-/*   Updated: 2021/08/07 11:58:59 by paugusto         ###   ########.fr       */
+/*   Updated: 2021/08/10 12:24:07 by paugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	size_t	j;
 	char	*ptr;
 
-	if(!s1 || !s2)
-		return(NULL);
+	if (!s1 || !s2)
+		return (NULL);
 	i = 0;
 	j = 0;
 	total_len = ft_strlen(s1) + ft_strlen(s2);
@@ -33,11 +33,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		i++;
 	}
 	while (s2[j] != '\0')
-	{
-		ptr[i] = s2[j];
-		i++;
-		j++;
-	}
+		ptr[i++] = s2[j++];
 	ptr[i] = '\0';
 	return (ptr);
 }

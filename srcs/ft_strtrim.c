@@ -6,7 +6,7 @@
 /*   By: paugusto <paugusto@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/05 16:40:16 by paugusto          #+#    #+#             */
-/*   Updated: 2021/08/07 17:37:55 by paugusto         ###   ########.fr       */
+/*   Updated: 2021/08/10 12:38:02 by paugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	i;
 
 	if (!s1 || !set)
-		return (ft_strdup(s1));
+		return (0);
 	while (*s1 && ft_strchr(set, *s1))
 		s1++;
 	i = ft_strlen(s1);

@@ -1,34 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_lstdelone.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: paugusto <paugusto@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/04 17:48:53 by paugusto          #+#    #+#             */
-/*   Updated: 2021/08/10 12:23:06 by paugusto         ###   ########.fr       */
+/*   Created: 2021/08/10 10:06:41 by paugusto          #+#    #+#             */
+/*   Updated: 2021/08/10 12:19:48 by paugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t size)
+void	ft_lstdelone(t_list *lst, void (*del)(void*))
 {
-	size_t	len;
-	size_t	i;
-
-	i = 0;
-	if (!src)
-		return (0);
-	len = ft_strlen(src);
-	if (size != 0)
-	{
-		while (src[i] != '\0' && i < size - 1)
-		{
-			dst[i] = src[i];
-			i++;
-		}
-		dst[i] = '\0';
-	}
-	return (len);
+	if (!lst)
+		return ;
+	del(lst->content);
+	free(lst);
 }

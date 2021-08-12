@@ -1,75 +1,49 @@
-NAME = libft.a
-CC = clang
-CFLAGS = -Wall -Wextra -Werror
-SRC = ft_atoi.c \
-		ft_bzero.c \
-		ft_calloc.c \
-		ft_isalnum.c \
-		ft_isalpha.c \
-		ft_isascii.c \
-		ft_isdigit.c \
-		ft_isprint.c \
-		ft_itoa.c \
-		ft_memchr.c \
-		ft_memcmp.c \
-		ft_memcpy.c \
-		ft_memmove.c \
-		ft_memset.c \
-		ft_putchar_fd.c \
-		ft_putendl_fd.c \
-		ft_putnbr_fd.c \
-		ft_putstr_fd.c \
-		ft_split.c \
-		ft_strchr.c \
-		ft_strdup.c \
-		ft_striteri.c \
-		ft_strjoin.c \
-		ft_strlcat.c \
-		ft_strlcpy.c \
-		ft_strlen.c \
-		ft_strmapi.c \
-		ft_strncmp.c \
-		ft_strnstr.c \
-		ft_strrchr.c \
-		ft_strtrim.c \
-		ft_substr.c \
-		ft_tolower.c \
-		ft_toupper.c
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: paugusto <paugusto@student.42sp.org.br>    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2021/08/12 16:15:45 by paugusto          #+#    #+#              #
+#    Updated: 2021/08/12 16:15:46 by paugusto         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
 
-OBJECTS = $(SRC:.c=.o)
-BONUS = ft_lstadd_back.c \
-		ft_lstadd_front.c \
-		ft_lstclear.c \
-		ft_lstdelone.c \
-		ft_lstiter.c \
-		ft_lstlast.c \
-		ft_lstmap.c \
-		ft_lstnew.c \
-		ft_lstsize.c
+NAME	= libft.a
 
-BONUS_OBJECTS = $(BONUS:.c=.o)
-RE = rm -f
+DIR_SRCS	= srcs
+DIR_OBJS	= objs
+SUBDIRS		= is to mem str put lst math gnl printf
 
-all: $(NAME)
+SRCS_DIRS	= $(foreach dir, $(SUBDIRS), $(addprefix $(DIR_SRCS)/, $(dir)))
+OBJS_DIRS	= $(foreach dir, $(SUBDIRS), $(addprefix $(DIR_OBJS)/, $(dir)))
+SRCS		= $(foreach dir, $(SRCS_DIRS), $(wildcard $(dir)/*.c))
+OBJS		= $(subst $(DIR_SRCS), $(DIR_OBJS), $(SRCS:.c=.o))
 
-$(NAME): $(OBJECTS)
-	ar -rcs $(NAME) $(OBJECTS)
+INCLUDES	= -I includes
 
-$(OBJECTS): $(SRC)
-	$(CC) $(FLAGS) -c $(SRC)
+CC		= clang
+CFLAGS	= -Wall -Wextra -Werror
+RM		= /bin/rm -f
 
-bonus: $(BONUS_OBJECTS)
-	ar -rcs $(NAME) $(BONUS_OBJECTS)
+$(DIR_OBJS)/%.o :	$(DIR_SRCS)/%.c
+			@mkdir -p $(DIR_OBJS) $(OBJS_DIRS)
+			@$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@
 
-$(BONUS_OBJECTS): $(BONUS)
-	$(CC) $(FLAGS) -c $(BONUS)
+all:		$(NAME)
+
+$(NAME):	$(OBJS)
+			@ar -rcs $(NAME) $(OBJS)
+			@ranlib $(NAME)
 
 clean:
-	$(RM) $(OBJECTS) $(BONUS_OBJECTS)
+			@$(RM) $(OBJS)
+			@$(RM) -r $(DIR_OBJS)
 
-fclean: clean
-	$(RM) $(NAME)
+fclean:		clean
+			@$(RM) $(NAME)
 
-re: fclean all
+re:			fclean all
 
-.PHONY: all clean fclean re bonus
+.PHONY:		all clean fclean re

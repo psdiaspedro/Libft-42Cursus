@@ -6,7 +6,7 @@
 /*   By: paugusto <paugusto@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/02 11:04:27 by paugusto          #+#    #+#             */
-/*   Updated: 2021/08/07 15:08:32 by paugusto         ###   ########.fr       */
+/*   Updated: 2021/08/12 10:15:38 by paugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,6 @@ void	*ft_calloc(size_t nbr, size_t size)
 	ptr = malloc(size * nbr);
 	if (!ptr)
 		return (NULL);
-	ft_memset(ptr, 0, size * nbr);
+	ft_bzero(ptr, size * nbr);
 	return (ptr);
 }

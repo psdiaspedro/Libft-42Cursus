@@ -6,7 +6,7 @@
 /*   By: paugusto <paugusto@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/29 10:03:45 by pedroadias        #+#    #+#             */
-/*   Updated: 2021/08/04 17:12:18 by paugusto         ###   ########.fr       */
+/*   Updated: 2021/08/12 10:26:40 by paugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,6 @@
 int	ft_isprint(int c)
 {
 	if (c >= 32 && c < 127)
-	{
 		return (1);
-	}
 	return (0);
 }

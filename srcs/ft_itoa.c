@@ -6,108 +6,57 @@
 /*   By: paugusto <paugusto@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/04 17:49:06 by paugusto          #+#    #+#             */
-/*   Updated: 2021/08/06 20:43:53 by paugusto         ###   ########.fr       */
+/*   Updated: 2021/08/12 10:45:34 by paugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static char	*min_int(int n)
+static int	nb_len(long int n)
 {
-	char	*result;
-	int		i;
+	int	len;
 
-	i = 9;
-	result = (char *)malloc(sizeof(char) * 12);
-	if (result == NULL)
-		return (NULL);
-	result[11] = '\0';
-	result[10] = '8';
-	n = n / 10;
-	n = -n;
-	while (i > 0)
+	len = 0;
+	if (n == 0)
+		len = 1;
+	if (n < 0)
+ 	{
+		n *= -1;
+		len ++;
+	}
+	while (n > 0)
 	{
-		result[i] = n % 10 + '0';
 		n = n / 10;
-		i--;
+		len++;
 	}
-	result[i] = '-';
-	return (result);
-}
-
-static char	*negative(int n)
-{
-	char	*result;
-	int		nb;
-	int		i;
-
-	n = -n;
-	nb = n;
-	i = 0;
-	while (nb > 0)
-	{
-		nb = nb / 10;
-		i++;
-	}
-	result = (char *)malloc(sizeof(char) * (i + 2));
-	if (result == NULL)
-		return (NULL);
-	result[i + 1] = '\0';
-	while (i > 0)
-	{
-		result[i] = n % 10 + '0';
-		n = n / 10;
-		i--;
-	}
-	result[i] = '-';
-	return (result);
-}
-
-static char	*positive(int n)
-{
-	char	*result;
-	int		nb;
-	int		i;
-
-	nb = n;
-	i = 0;
-	while (nb > 0)
-	{
-		nb = nb / 10;
-		i++;
-	}
-	result = (char *)malloc(sizeof(char) * (i + 1));
-	if (result == NULL)
-		return (NULL);
-	result[i] = '\0';
-	while (i > 0)
-	{
-		result[i - 1] = n % 10 + '0';
-		n = n / 10;
-		i--;
-	}
-	return (result);
-}
-
-static char	*if_null(void)
-{
-	char	*result;
-
-	result = (char *)malloc(sizeof(char) * 2);
-	if (result == NULL)
-		return (NULL);
-	result[0] = '0';
-	result[1] = '\0';
-	return (result);
+	return (len);
 }
 
 char	*ft_itoa(int n)
 {
-	if (n == -2147483648)
-		return (min_int(n));
-	if (n < 0)
-		return (negative(n));
-	if (n > 0)
-		return (positive(n));
-	return (if_null());
+	int			len;
+	char		*str;
+	long int	nbr;
+
+	nbr = n;
+	len = nb_len(nbr);
+	str = malloc ((len) * sizeof(char) + 1);
+	if (!str)
+		return (NULL);
+	str[len] = '\0';
+	len = len - 1;
+	if (nbr == 0)
+		str[0] = '0';
+	if (nbr < 0)
+	{
+		nbr = nbr * -1;
+		str[0] = '-';
+	}
+	while (nbr > 0)
+	{
+		str[len] = (nbr % 10) + '0';
+		nbr = nbr / 10;
+		len--;
+	}
+	return (str);
 }

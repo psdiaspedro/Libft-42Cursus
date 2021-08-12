@@ -6,7 +6,7 @@
 /*   By: paugusto <paugusto@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/03 11:41:38 by paugusto          #+#    #+#             */
-/*   Updated: 2021/08/04 17:45:27 by paugusto         ###   ########.fr       */
+/*   Updated: 2021/08/12 11:16:14 by paugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	ft_putstr_fd(char *s, int fd)
 	{
 		while (s[i] != '\0')
 		{
-			write(fd, &s[i], 1);
+			ft_putchar_fd(s[i], fd);
 			i++;
 		}
 	}

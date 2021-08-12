@@ -6,7 +6,7 @@
 /*   By: paugusto <paugusto@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/10 10:03:56 by paugusto          #+#    #+#             */
-/*   Updated: 2021/08/10 12:19:25 by paugusto         ###   ########.fr       */
+/*   Updated: 2021/08/12 14:17:25 by paugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,7 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 {
 	if (!new)
 		return ;
-	if (!*lst)
-	{
-		*lst = new;
-		return ;
-	}
-	new->next = *lst;
+	if (*lst)
+		new->next = *lst;
 	*lst = new;
 }

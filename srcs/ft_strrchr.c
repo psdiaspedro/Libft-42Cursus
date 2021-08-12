@@ -6,7 +6,7 @@
 /*   By: paugusto <paugusto@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/30 14:25:36 by paugusto          #+#    #+#             */
-/*   Updated: 2021/08/06 13:39:37 by paugusto         ###   ########.fr       */
+/*   Updated: 2021/08/12 12:22:07 by paugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,14 +16,12 @@ char	*ft_strrchr(const char *s, int c)
 {
 	int		i;
 	char	*ptr;
-	char	x;
 
 	ptr = (char *)s;
-	x = (char)c;
 	i = ft_strlen(ptr);
 	while (i >= 0)
 	{
-		if (ptr[i] == x)
+		if (ptr[i] == (char)c)
 			return (&ptr[i]);
 		i--;
 	}

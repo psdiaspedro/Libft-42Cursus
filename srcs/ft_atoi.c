@@ -6,7 +6,7 @@
 /*   By: paugusto <paugusto@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/30 17:02:47 by paugusto          #+#    #+#             */
-/*   Updated: 2021/08/10 12:21:12 by paugusto         ###   ########.fr       */
+/*   Updated: 2021/08/12 10:50:13 by paugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ int	ft_atoi(const char *str)
 		i++;
 	if (str[i] == '+' || str[i] == '-')
 		i++;
-	while (ft_isdigit(str[i]))
+	while (ft_isdigit(str[i]))//124354
 	{
 		value = (value * 10) + (str[i] - '0');
 		i++;

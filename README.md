@@ -7,7 +7,7 @@
 	For further information about others 42cursus and its projects, please go to my <a href="https://github.com/appinha/42cursus"><b>repositories</b></a>.
 </p>
 
-# libft
+# Libft
 ## Implementation of some of the Standard C Library functions
 
 Libft is the first project in the study program at School 42 (UNIT Factory).

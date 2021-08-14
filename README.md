@@ -7,16 +7,6 @@
 	For further information about others 42cursus and its projects, please go to my <a href="https://github.com/appinha/42cursus"><b>repositories</b></a>.
 </p>
 
-<h3 align="center">
-	<a href="#%EF%B8%8F-about">About</a>
-	<span> · </span>
-	<a href="#-index">Index</a>
-	<span> · </span>
-	<a href="#%EF%B8%8F-usage">Usage</a>
-	<span> · </span>
-	<a href="#-testing">Testing</a>
-</h3>
-
 # libft
 ## Implementation of some of the Standard C Library functions
 

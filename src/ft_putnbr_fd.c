@@ -6,11 +6,11 @@
 /*   By: paugusto <paugusto@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/03 12:00:46 by paugusto          #+#    #+#             */
-/*   Updated: 2021/08/04 17:46:49 by paugusto         ###   ########.fr       */
+/*   Updated: 2021/08/31 20:42:18 by paugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../include/libft.h"
 
 void	ft_putnbr_fd(int n, int fd)
 {

@@ -6,11 +6,11 @@
 /*   By: paugusto <paugusto@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/30 13:42:03 by paugusto          #+#    #+#             */
-/*   Updated: 2021/08/12 14:13:17 by paugusto         ###   ########.fr       */
+/*   Updated: 2021/08/31 20:53:19 by paugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../include/libft.h"
 
 int	ft_toupper(int i)
 {

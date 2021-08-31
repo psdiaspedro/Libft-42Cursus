@@ -6,11 +6,11 @@
 /*   By: paugusto <paugusto@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/30 17:02:47 by paugusto          #+#    #+#             */
-/*   Updated: 2021/08/12 10:50:13 by paugusto         ###   ########.fr       */
+/*   Updated: 2021/08/31 20:56:08 by paugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../include/libft.h"
 
 static int	is_negative(const char *str)
 {
@@ -44,7 +44,7 @@ int	ft_atoi(const char *str)
 		i++;
 	if (str[i] == '+' || str[i] == '-')
 		i++;
-	while (ft_isdigit(str[i]))//124354
+	while (ft_isdigit(str[i]))
 	{
 		value = (value * 10) + (str[i] - '0');
 		i++;

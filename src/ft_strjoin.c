@@ -6,11 +6,11 @@
 /*   By: paugusto <paugusto@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/02 14:07:08 by paugusto          #+#    #+#             */
-/*   Updated: 2021/08/10 12:24:07 by paugusto         ###   ########.fr       */
+/*   Updated: 2021/08/31 20:52:47 by paugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../include/libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {

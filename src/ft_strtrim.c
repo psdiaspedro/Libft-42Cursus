@@ -6,11 +6,11 @@
 /*   By: paugusto <paugusto@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/05 16:40:16 by paugusto          #+#    #+#             */
-/*   Updated: 2021/08/12 12:34:29 by paugusto         ###   ########.fr       */
+/*   Updated: 2021/08/31 20:53:13 by paugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../include/libft.h"
 
 char	*ft_strtrim(char const *s1, char const *set)
 {

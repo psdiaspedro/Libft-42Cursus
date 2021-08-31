@@ -6,11 +6,11 @@
 /*   By: paugusto <paugusto@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/29 14:48:10 by paugusto          #+#    #+#             */
-/*   Updated: 2021/08/12 11:06:37 by paugusto         ###   ########.fr       */
+/*   Updated: 2021/08/31 20:42:09 by paugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../include/libft.h"
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {

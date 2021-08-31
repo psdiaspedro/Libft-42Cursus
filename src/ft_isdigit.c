@@ -6,11 +6,11 @@
 /*   By: paugusto <paugusto@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/29 09:54:42 by pedroadias        #+#    #+#             */
-/*   Updated: 2021/08/12 10:24:51 by paugusto         ###   ########.fr       */
+/*   Updated: 2021/08/31 20:41:21 by paugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../include/libft.h"
 
 int	ft_isdigit(int c)
 {

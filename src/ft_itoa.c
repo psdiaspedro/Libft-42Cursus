@@ -6,11 +6,11 @@
 /*   By: paugusto <paugusto@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/04 17:49:06 by paugusto          #+#    #+#             */
-/*   Updated: 2021/08/12 10:45:34 by paugusto         ###   ########.fr       */
+/*   Updated: 2021/08/31 20:55:51 by paugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../include/libft.h"
 
 static int	nb_len(long int n)
 {
@@ -20,7 +20,7 @@ static int	nb_len(long int n)
 	if (n == 0)
 		len = 1;
 	if (n < 0)
- 	{
+	{
 		n *= -1;
 		len ++;
 	}

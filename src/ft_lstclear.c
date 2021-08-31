@@ -6,11 +6,11 @@
 /*   By: paugusto <paugusto@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/10 10:06:59 by paugusto          #+#    #+#             */
-/*   Updated: 2021/08/10 12:19:39 by paugusto         ###   ########.fr       */
+/*   Updated: 2021/08/31 20:41:32 by paugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../include/libft.h"
 
 void	ft_lstclear(t_list **lst, void (*del)(void*))
 {

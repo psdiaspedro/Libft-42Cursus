@@ -6,11 +6,11 @@
 /*   By: paugusto <paugusto@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/29 10:11:47 by pedroadias        #+#    #+#             */
-/*   Updated: 2021/08/12 12:09:36 by paugusto         ###   ########.fr       */
+/*   Updated: 2021/08/31 20:52:56 by paugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../include/libft.h"
 
 size_t	ft_strlen(const char *str)
 {

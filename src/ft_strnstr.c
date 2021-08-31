@@ -6,11 +6,11 @@
 /*   By: paugusto <paugusto@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/02 09:34:33 by paugusto          #+#    #+#             */
-/*   Updated: 2021/08/07 15:16:48 by paugusto         ###   ########.fr       */
+/*   Updated: 2021/08/31 20:53:02 by paugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../include/libft.h"
 
 char	*ft_strnstr(const char *s1, const char *s2, size_t n)
 {

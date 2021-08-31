@@ -6,11 +6,11 @@
 /*   By: paugusto <paugusto@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/03 14:17:52 by paugusto          #+#    #+#             */
-/*   Updated: 2021/08/11 11:22:04 by paugusto         ###   ########.fr       */
+/*   Updated: 2021/08/31 20:42:22 by paugusto         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../include/libft.h"
 
 static int	word_counter(char const *str, char c)
 {

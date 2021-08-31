@@ -4,15 +4,15 @@
 
 <p align="center">
 	<b><i>Development repo for 42cursus' libft project</i></b><br>
-	For further information about others 42cursus and its projects, please go to my <a href="https://github.com/psdiaspedro?tab=repositories"><b>repositories</b></a>.
+	For further information about 42 and its projects, please go to my <a href="https://github.com/psdiaspedro?tab=repositories"><b>repositories</b></a>.
 </p>
 
-# Libft
+# About
 ## Implementation of some of the Standard C Library functions
 
 Libft is the first project in the study program at School 42 (UNIT Factory).
-The purpose of the project is to introduce to students standard C functions that we will be able to use in our future projects.
-To give a deeper understanding of functions we needed to create our own realization of standard functions.
+>_The purpose of the project is to introduce to students standard C functions that we will be able to use in our future projects._
+>_To give a deeper understanding of functions we needed to create our own realization of standard functions._
 
 All functions are created in accordance with Norm - the bunch of rules how code should be formatted.
 
@@ -28,7 +28,7 @@ Because of 42 School norm requirements: <br />
 * Additional functions
 * Bonus part functions
 
-In bonus part, there are functions proposed in the task and some personal functions that I decided to create.
+
 
 ### How to compile library:
 
@@ -44,7 +44,7 @@ Makefile has 4 main options:<br/>
 #### Main part
 
 | Function      | Description                                                                           |
-| ------------- | --------------------------------------------------------------------------------------| 
+| ------------- | --------------------------------------------------------------------------------------|
 | memset | fill a byte string with a byte value |
 | bzero | write zeroes to a byte string |
 | memcpy | copy memory area |
@@ -75,7 +75,7 @@ Makefile has 4 main options:<br/>
 #### Additional functions
 
 | Function      | Description                                                                           |
-| ------------- | --------------------------------------------------------------------------------------| 
+| ------------- | --------------------------------------------------------------------------------------|
 | ft_memalloc   | allocates (with malloc(3)) and returns a “fresh” memory area. The memory allocated is initialized to 0. If the allocation fails, the function returns NULL |
 | ft_memdel     | takes as a parameter the address of a memory area that needs to be freed with free(3), then puts the pointer to NULL |
 | ft_strnew     | allocates (with malloc(3)) and returns a “fresh” string ending with ’\0’. Each character of the string is initialized at ’\0’. If the allocation fails the function returns NULL |
@@ -104,7 +104,7 @@ Makefile has 4 main options:<br/>
 #### Bonus part
 
 | Function      | Description                                                                           |
-| ------------- | --------------------------------------------------------------------------------------| 
+| ------------- | --------------------------------------------------------------------------------------|
 | ft_lstnew     | allocates (with malloc(3)) and returns a “fresh” link. The variables content and content_size of the new link are initialized by copy of the parameters of the function. If the parameter content is nul, the variable content is initialized to NULL and the variable content_size is initialized to 0 even if the parameter content_size isn’t. The variable next is initialized to NULL. If the allocation fails, the function returns NULL |
 | ft_lstdelone  | takes as a parameter a link’s pointer address and frees the memory of the link’s content using the function del given as a parameter, then frees the link’s memory using free(3). The memory of next must not be freed under any circumstance. Finally, the pointer to the link that was just freed must be set to NULL (quite similar to the function ft_memdel in the mandatory part) |
 | ft_lstdel     | takes as a parameter the adress of a pointer to a link and frees the memory of this link and every successors of that link using the functions del and free(3). Finally the pointer to the link that was just freed must be set to NULL (quite similar to the function ft_memdel from the mandatory part) |

@@ -28,6 +28,8 @@ Because of 42 School norm requirements: <br />
 * Additional functions
 * Bonus part functions
 
+# 📑 Guide
+
 ### Functions from `<ctype.h>` library
 
 * [`ft_isascii`](./src/ft_isascii.c)			- test for ASCII character.
@@ -92,7 +94,7 @@ Because of 42 School norm requirements: <br />
 
 _Note: functions marked with * are bonus functions (not mandatory by the project's subject)._
 
-### How to compile library:
+# 🛠️ How to compile library:
 
 Using Makefile you can create library file libft.a<br/>
 Makefile has 4 main options:<br/>

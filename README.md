@@ -7,7 +7,12 @@
 	For further information about 42 and its projects, please go to my <a href="https://github.com/psdiaspedro?tab=repositories"><b>repositories</b></a>.
 </p>
 
-# About
+# index
+* [About](#about) 
+*  [Functions Guide](#guide) 
+*  [Compiling](#compile)
+
+# <a name="about">About</a>
 ## Implementation of some of the Standard C Library functions
 
 Libft is the first project in the study program at School 42 (UNIT Factory).
@@ -28,7 +33,7 @@ Because of 42 School norm requirements: <br />
 * Additional functions
 * Bonus part functions
 
-# 📑 Guide
+# <a name="guide">📑 Functions Guide</a>
 
 ### Functions from `<ctype.h>` library
 
@@ -94,7 +99,7 @@ Because of 42 School norm requirements: <br />
 
 _Note: functions marked with * are bonus functions (not mandatory by the project's subject)._
 
-# 🛠️ How to compile library:
+# <a name="compile">🛠️ How to compile library: </a>
 
 Using Makefile you can create library file libft.a<br/>
 Makefile has 4 main options:<br/>
